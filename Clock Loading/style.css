@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.outer-ring{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inner-ring{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-ring{
+    position: relative;
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+}
+
+.hand{
+    width: 1px;
+    height: 40px; 
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    animation: rotate 5s infinite;
+}
+
+.loading{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: var(--x);
+    transform: translate(-50%, 0);
+    top: var(--y);
+    font-weight: bolder;
+}
+
+@keyframes rotate{
+    0%{
+        transform: translate(40%, -60%) rotate(0deg);
+        /* border: 1px solid rgb(255, 255, 255); */
+    }
+    14%{
+        transform: translate(300%, -58%) rotate(50deg);
+        /* border: 1px solid rgb(255, 0, 0); */
+    }
+    28%{
+        transform: translate(280%, -42%) rotate(98deg);
+        /* border: 1px solid rgb(0, 255, 8); */
+
+    }
+    42%{
+        transform: translate(200%, -25%) rotate(150deg);
+        /* border: 1px solid rgb(0, 238, 255); */
+    }
+    56%{
+        transform: translate(-70%, -23%) rotate(200deg);
+        /* border: 1px solid rgb(0, 0, 255); */
+
+    }
+    70%{
+        transform: translate(-250%, -38%) rotate(255deg);
+        /* border: 1px solid rgb(144, 0, 255); */
+
+    }
+    84%{
+        transform: translate(-220%, -58%) rotate(308deg);
+        /* border: 1px solid rgb(242, 0, 255); */
+
+    }
+    100%{
+        transform: translate(40%, -60%) rotate(358deg);
+        /* border: 1px solid rgb(255, 255, 255); */
+
+    }
+}
+
