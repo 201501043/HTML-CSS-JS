@@ -18,6 +18,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: changeColor 5s infinite;
 }
 
 .inner-ring{
@@ -28,6 +29,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: black;
 }
 
 .center-ring{
@@ -59,43 +61,65 @@ body{
     font-weight: bolder;
 }
 
+@keyframes changeColor{
+    0%{
+        background-color: rgb(255, 110, 110);
+        box-shadow: 1px 1px 10px 2px rgb(255, 111, 111);
+    }
+    14%{
+        background-color: orange;
+        box-shadow: 1px 1px 10px 1px orange;
+    }
+    28%{
+        background-color: yellow;
+        box-shadow: 1px 1px 10px 2px yellow;
+    }
+    42%{
+        background-color: rgb(105, 255, 105);
+        box-shadow: 1px 1px 10px 2px rgb(108, 255, 108);
+    }
+    56%{
+        background-color: rgb(52, 164, 255);
+        box-shadow: 1px 1px 10px 4px rgb(54, 188, 255);
+    }
+    70%{
+        background-color: blueviolet;
+        box-shadow: 1px 1px 10px 3px blueviolet;
+    }
+    84%{
+        background-color: rgb(183, 79, 183);
+        box-shadow: 1px 1px 10px 3px rgb(175, 64, 175)
+    }
+    100%{
+        background-color: red;;
+        box-shadow: 1px 1px 10px 2px red;
+    }
+}
+
 @keyframes rotate{
     0%{
         transform: translate(40%, -60%) rotate(0deg);
-        /* border: 1px solid rgb(255, 255, 255); */
     }
     14%{
         transform: translate(300%, -58%) rotate(50deg);
-        /* border: 1px solid rgb(255, 0, 0); */
     }
     28%{
         transform: translate(280%, -42%) rotate(98deg);
-        /* border: 1px solid rgb(0, 255, 8); */
-
     }
     42%{
         transform: translate(200%, -25%) rotate(150deg);
-        /* border: 1px solid rgb(0, 238, 255); */
     }
     56%{
         transform: translate(-70%, -23%) rotate(200deg);
-        /* border: 1px solid rgb(0, 0, 255); */
-
     }
     70%{
         transform: translate(-250%, -38%) rotate(255deg);
-        /* border: 1px solid rgb(144, 0, 255); */
-
     }
     84%{
         transform: translate(-220%, -58%) rotate(308deg);
-        /* border: 1px solid rgb(242, 0, 255); */
-
     }
     100%{
         transform: translate(40%, -60%) rotate(358deg);
-        /* border: 1px solid rgb(255, 255, 255); */
-
     }
 }
 
