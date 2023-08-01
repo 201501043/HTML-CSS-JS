@@ -12,27 +12,28 @@ body{
     transform: translate(-50%, -50%);
     z-index: 10;
     overflow: hidden;
+    /* border-left:2px solid rgb(57, 123, 185); */
 }
 
 svg{
     overflow: hidden;
-    stroke: rgb(0, 140, 255);
+    stroke: rgb(83, 152, 209);
     fill: transparent
 }
 
 .boxes{
     animation-name: moveTo;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-delay: 1s;
 }
 
 span{
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: var(--x);
     animation-name: drop;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: var(--delay);
     animation-iteration-count: infinite;
     z-index: -1;
@@ -58,10 +59,14 @@ span{
     }
     30%{
         transform: translateY(110px);
-        color: rgb(0, 242, 255);
+        color: rgb(72, 147, 221);
+    }
+    50.5%{
+        transform: translateY(110px);
+        color: rgb(72, 147, 221);
     }
     100%{
         transform: translate(-93px, 110px);
-        color: rgb(0, 242, 255);
+        color: rgb(69, 131, 207);
     }
 }
